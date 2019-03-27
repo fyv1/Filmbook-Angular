@@ -8,12 +8,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import { FilmDetailComponent } from './film-detail/film-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewFilmComponent
+    NewFilmComponent,
+    FilmDetailComponent
   ],
   imports: [
     BrowserModule,

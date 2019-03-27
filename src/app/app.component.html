@@ -1,2 +1,7 @@
 <h1>Filmbook</h1>
-<app-new-film></app-new-film>
+<div id="films">
+  <a [routerLink]="['/film', f.id]" *ngFor="let f of filmList">{{ f.title }}</a>
+</div>
+<router-outlet></router-outlet>
+
+
