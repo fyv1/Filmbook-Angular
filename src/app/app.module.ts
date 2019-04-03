@@ -9,13 +9,16 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { FilmDetailComponent } from './film-detail/film-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SearchFilmComponent } from './search-film/search-film.component'
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NewFilmComponent,
-    FilmDetailComponent
+    FilmDetailComponent,
+    SearchFilmComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,8 @@ import { FilmDetailComponent } from './film-detail/film-detail.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

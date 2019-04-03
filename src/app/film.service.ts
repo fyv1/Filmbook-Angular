@@ -29,7 +29,7 @@ export class FilmService {
   }
 
   getFilmsFromLocalStorage() {
-    this.filmList = JSON.parse(localStorage.getItem('filmList'));
+    this.filmList = JSON.parse(localStorage.getItem('filmList')) || [];
   }
 
 }
